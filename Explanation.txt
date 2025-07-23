@@ -1,0 +1,15 @@
+What are Functional Components in React?
+Functional components are JavaScript functions that return JSX to define what the UI should look like. They are simpler and easier to write than class components. Functional components are often used when a component does not need to manage its own state or access lifecycle methods — although with the introduction of React Hooks, even complex logic and state management can now be handled in functional components. They are widely used in modern React development because of their cleaner syntax and better performance.
+
+Difference Between Functional and Class Components
+Functional components are written as regular JavaScript functions and are easier to read and maintain. They do not require a constructor or a render() method — the JSX is returned directly from the function. With the use of Hooks like useState and useEffect, functional components can now manage state and side effects, which was earlier only possible with class components.
+
+On the other hand, class components use ES6 classes and require a render() method to return JSX. They manage state using this.state and modify it using this.setState(). Class components also come with built-in lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.
+
+While both component types can do the same things, functional components are now preferred in modern React development due to their simplicity and support for hooks, making them more powerful and concise.
+
+
+What are Props in React?
+Props, short for "properties," are used to pass data from one component to another in React, usually from a parent to a child component. They allow components to be dynamic and customizable. Props are read-only, meaning a component cannot modify the props it receives; instead, they should be used to render dynamic content or control behavior.
+
+For example, a StudentCard component can accept props like name and course, and display that information accordingly. This helps in reusing the same component multiple times with different data, making the application more modular and efficient.
